@@ -21,9 +21,9 @@ function tap.packet(pinfo, tvb)
 end
 
 function tap.draw()
-    print("=== Статистика по IP-адресам ===")
+    print("=== IP address statistics ===")
     for ip, count in pairs(ip_counts) do
-        print(ip .. ": " .. count .. " пакетов")
+        print(ip .. ": " .. count .. "packages")
     end
 end
 
